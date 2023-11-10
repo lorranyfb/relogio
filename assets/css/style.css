@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f6f7fb; 
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+}
+
+h1 {
+    color: #002f5e;
+    font-size: 30px;
+}
+
+.button {
+    width: 60px;
+    height: 30px;
+    margin: 10px 20px;
+    background-color: #002f5e;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button .indicator {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 500px;
+    box-shadow: 0 15px 25px #0000001a, 0 25px 45px #0000001a;
+    position: relative;
+    transition: .5s;
+}
+
+.number {
+    color: #002f5e;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    transition: .5s;
+}
+
+.number-1 {
+    transform: rotate(30deg);
+}
+
+.number-2 {
+    transform: rotate(60deg);
+}
+
+.number-3 {
+    transform: rotate(90deg);
+}
+
+.number-4 {
+    transform: rotate(120deg);
+}
+
+.number-5 {
+    transform: rotate(150deg);
+}
+
+.number-6 {
+    transform: rotate(180deg);
+}
+
+.number-7 {
+    transform: rotate(210deg);
+}
+
+.number-8 {
+    transform: rotate(240deg);
+}
+
+.number-9 {
+    transform: rotate(270deg);
+}
+
+.number-10 {
+    transform: rotate(300deg);
+}
+
+.number-11 {
+    transform: rotate(330deg);
+}
+
+.number-12 {
+    transform: rotate(360deg);
+}
+
+.second-hand {
+    width: 5px;
+    height: 150px;
+    background-color: rgb(17, 0, 255);
+}
+
+.minute-hand {
+    width: 8px;
+    height: 120px;
+    background-color: #000000;
+}
+
+.hour-hand {
+    width: 10px;
+    height: 100px;
+    background-color: #000000;
+}
+
+.position {
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0,-50%);
+    transform-origin: bottom center;
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color:#000000;
+    position: absolute;
+}
+
+.button.dark {
+    background-color: #fff;
+}
+
+.button.dark .indicator {
+    left: 30px;
+    background-color: #0d243d;
+}
+
+body.dark {
+    background-color: #001225;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+.clock.dark {
+    background-color:  #0d243d;
+}
+
+.clock.dark .number {
+    color: #fff;
+}
